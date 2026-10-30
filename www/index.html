@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0c1726"><link rel="manifest" href="manifest.webmanifest">
+<title>Metro Contable | Control de Recaudos</title><link rel="stylesheet" href="styles.css"></head><body>
+<section id="login"><form id="lf" autocomplete="off"><h1>Metro Contable</h1><p>Seleccione su portal e ingrese sus credenciales</p>
+<div id="portals" role="radiogroup" aria-label="Portal"></div>
+<label>Usuario<input id="lu" required autocapitalize="none"></label>
+<label>Contraseña<input id="lp" type="password" required></label>
+<small class="err" id="le" role="alert"></small><button class="btn p">Ingresar</button></form></section>
+<div id="app" hidden><aside><b id="who"></b><nav id="nav"></nav><button class="btn" id="out">Cerrar sesión</button></aside>
+<main><header><h2 id="title"></h2><div><button class="btn" id="expAll">⬇ CSV</button> <button class="btn p" id="new">＋ Nuevo recaudo</button></div></header><div id="view"></div></main></div>
+<dialog id="dlg"></dialog><div id="toast" role="status"></div>
+<script src="app.js"></script></body></html>

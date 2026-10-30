@@ -1,0 +1,5 @@
+{"name":"metro-contable","version":"2.1.0","description":"Metro Contable - Control de Recaudos","author":"Grupo Metro Contable","main":"main.js","private":true,
+"scripts":{"start":"electron .","dist:win":"electron-builder --win","dist:mac":"electron-builder --mac","dist:linux":"electron-builder --linux"},
+"dependencies":{"@capacitor/android":"^6.0.0","@capacitor/cli":"^6.0.0","@capacitor/core":"^6.0.0"},
+"devDependencies":{"electron":"^31.0.0","electron-builder":"^24.13.3"},
+"build":{"appId":"co.edu.cun.metrocontable","productName":"Metro Contable","files":["main.js","www/**"],"win":{"target":"nsis","icon":"www/icon.ico"},"nsis":{"oneClick":false,"allowToChangeInstallationDirectory":true,"createDesktopShortcut":true},"linux":{"target":"AppImage","icon":"www/icon-512.png"},"mac":{"target":"dmg","icon":"www/icon-512.png"}}}
